@@ -10,29 +10,23 @@ document.addEventListener("DOMContentLoaded", function() {
          
          // Buscar en Google
          
-         "busca *direccionG1 en google": direccionG1 => {
+         "busca *direccionG1 en Google": direccionG1 => {
             window.open(`https://www.google.com/search?q=${direccionG1}`);
          },
-         "abre *direccionG2 en google": direccionG2 => {
+         "abre *direccionG2 en Google": direccionG2 => {
             window.open(`https://www.google.com/search?q=${direccionG2}`);
          },
-         "alia abre *direccionG3 en google": direccionG3 => {
+         "alia abre *direccionG3 en Google": direccionG3 => {
             window.open(`https://www.google.com/search?q=${direccionG3}`);
          },
-         "alia busca *direccionG4 en google": direccionG4 => {
+         "alia busca *direccionG4 en Google": direccionG4 => {
             window.open(`https://www.google.com/search?q=${direccionG4}`);
          },
-         "abre *direccionG5": direccionG5 => {
+         "alia abre *direccionG5": direccionG5 => {
             window.open(`https://www.google.com/search?q=${direccionG5}`);
          },
-         "busca *direccionG6": direccionG6 => {
+         "alia busca *direccionG6": direccionG6 => {
             window.open(`https://www.google.com/search?q=${direccionG6}`);
-         },
-         "alia abre *direccionG7": direccionG7 => {
-            window.open(`https://www.google.com/search?q=${direccionG7}`);
-         },
-         "alia busca *direccionG8": direccionG8 => {
-            window.open(`https://www.google.com/search?q=${direccionG8}`);
          },
          
          // Buscar en YouTube
