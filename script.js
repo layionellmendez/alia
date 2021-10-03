@@ -43,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
          "abre *direccionYT2 en youtube": direccionYT2 => {
             window.open(`https://www.youtube.com/results?search_query=${direccionYT2}`)
          },
-         "alia busca *direccionYT3 en youtube": direccionYT1 => {
-            window.open(`https://www.youtube.com/results?search_query=${direccionYT1}`)
+         "alia busca *direccionYT3 en youtube": direccionYT3 => {
+            window.open(`https://www.youtube.com/results?search_query=${direccionYT3}`)
          },
-         "alia abre *direccionYT4 en youtube": direccionYT2 => {
-            window.open(`https://www.youtube.com/results?search_query=${direccionYT2}`)
+         "alia abre *direccionYT4 en youtube": direccionYT4 => {
+            window.open(`https://www.youtube.com/results?search_query=${direccionYT4}`)
          }
          
       };
