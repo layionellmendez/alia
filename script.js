@@ -1,7 +1,7 @@
 const win = window;
 document.addEventListener("DOMContentLoaded", function() {
   if (!annyang) {
-    return alert("C mamut, tu navegador no soporta el reconocimiento de voz.");
+    return new Notification("C mamut, tu navegador no soporta el reconocimiento de voz.");
   }
 
   if (annyang) {
@@ -9,12 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const comandos = {
       "busca en Google *query": (query) => {
         win.open(`https://www.google.com/search?q=${query}`);
+        new Notification(`Buscando "${query}" en Google`);
       },
       "busca en YouTube *query": (query) => {
         win.open(`https://www.youtube.com/results?search_query=${query}`);
+        new Notification(`Buscando "${query}" en YouTube`);
       },
       "dime la hora": () => {
         win.open(`https://www.google.com/search?q=hora`);
+        new Notification("Abriendo hora actual");
       },
     };
 
@@ -30,9 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     linksPredeterminados.forEach(({nombre, url}) => {
-      comandos[`abre ${nombre}`] = () => { win.open(url) };
-      comandos[`lia abre ${nombre}`] = () => { win.open(url) };
+      comandos[`abre ${nombre}`] = () => {
+        win.open(url);
+        new Notification(`Abriendo ${nombre}`);
+      };
+      comandos[`alia abre ${nombre}`] = () => {
+        win.open(url);
+        new Notification(`Abriendo ${nombre}`);
+      };
     });
+
+    annyang.addCommands(comandos);
+    annyang.start();
+  }
+});
+
 
     annyang.addCommands(comandos);
     annyang.start();
