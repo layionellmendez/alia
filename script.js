@@ -51,5 +51,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     annyang.addCommands(comandos);
     annyang.start();
-  
 });
