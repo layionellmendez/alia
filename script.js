@@ -47,8 +47,3 @@ document.addEventListener("DOMContentLoaded", function() {
     annyang.start();
   }
 });
-
-
-    annyang.addCommands(comandos);
-    annyang.start();
-});
