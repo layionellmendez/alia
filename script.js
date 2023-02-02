@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     linksPredeterminados.forEach(({nombre, url}) => {
       comandos[`abre ${nombre}`] = () => { win.open(url) };
-      comandos[`alia abre ${nombre}`] = () => { win.open(url) };
+      comandos[`lia abre ${nombre}`] = () => { win.open(url) };
     });
 
     annyang.addCommands(comandos);
